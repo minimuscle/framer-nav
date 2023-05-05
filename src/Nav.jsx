@@ -74,20 +74,19 @@ export default function Nav() {
     className={smallHeader ? "smallNav" : "navStyles"}
     >
       <img src={logo} alt="AMW Logo" style={smallHeader ? imgStyleSmall : imgStyle}/>
-      <a href="#">Buy a Car</a>
-      <a href="#">Sell a Car</a>
-      <a href="#">Services</a>
-      <a href="#" style={smallHeader ? {display: "none"} : {display: 'unset'}}>About</a>
-      <a href="#" style={smallHeader ? {display: "none"} : {display: 'unset'}}>Contact</a>
+      <a className="link" href="#">Buy a Car</a>
+      <a className="link" href="#">Sell a Car</a>
+      <a className="link" href="#">Services</a>
+      <a className="link" href="#" style={smallHeader ? {display: "none"} : {display: 'unset'}}>About</a>
+      <a className="link" href="#" style={smallHeader ? {display: "none"} : {display: 'unset'}}>Contact</a>
       <div className="vl" style={smallHeader ? {display: 'unset'} : {display: "none"}}></div>
       <div style={smallHeader ? rightSideGrow : rightSide}>
-        
         <img className="searchIcon" src={search} alt="Search" style={smallHeader ? {padding: "20px 32px"} : {display: 'unset'}}/>
         <input placeholder="Search" style={smallHeader ? {display: "none"} : {display: 'unset'}}/>
         
-        <img className="sideIcons"  src={map} alt="Search"/>
-        <img className="sideIcons" src={profile} alt="Search"/>
-        <img className="sideIcons" src={wishlist} alt="Search"/>
+        <a href="#"><img className="sideIcons" src={map} alt="Search"/></a>
+        <a href="#"><img className="sideIcons" src={profile} alt="Profile"/></a>
+        <a href="#"><img className="sideIcons" src={wishlist} alt="Wishlist"/></a>
         <button>Call 1800 000 000</button>
       </div>
     </motion.nav>
