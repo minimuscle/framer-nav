@@ -1,42 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  background-color: #f5f5f5;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+a {
+  text-decoration: none;
+  padding: 0 25px;
+  color: #283040;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+  float: right;
+  height: 100%;
+  border: none;
+  background-color: #283040;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 5px;
+  padding: 16px 24px;
 }
 
-.card {
-  padding: 2em;
+.searchIcon {
+  padding: 20px 0 20px 32px;
+  float: left;
 }
 
-.read-the-docs {
-  color: #888;
+.sideIcons {
+  float: right;
+  padding: 20px 32px 20px 0;
+}
+
+.navStyles {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.smallNav {
+  border-radius: 5px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  width: 940px;
+  left: 25%;
+  right: 25%;
+  align-items: center;
+  position: fixed;
+  margin: auto;
+  background-color: #fff; 
+  overflow: hidden;
+}
+
+.vl {
+  border-left: 1px solid #6493F1;
+  height: 31px;
 }
