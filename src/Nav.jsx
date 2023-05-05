@@ -61,7 +61,7 @@ export default function Nav() {
 
   const variants = {
     /** this is the "visible" key and it's respective style object **/
-    full: { scale: [0.5, 1], y: 0 },
+    full: { scale: [0.75, 1], y: 0 },
     /** this is the "hidden" key and it's respective style object **/
     small: { scale: [2, 1], y: [-50, 0] }
   };
@@ -71,6 +71,10 @@ export default function Nav() {
     layout 
     variants={variants} 
     animate={smallHeader ? "small" : "full"} 
+    transition={{
+      type: "spring",
+      mass: 0.5
+    }}
     className={smallHeader ? "smallNav" : "navStyles"}
     >
       <img src={logo} alt="AMW Logo" style={smallHeader ? imgStyleSmall : imgStyle}/>
