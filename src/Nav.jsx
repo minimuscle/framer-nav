@@ -53,7 +53,7 @@ export default function Nav() {
     if (scrollYProgress?.current < 0.1) {
       console.log("full")
       setHeader(false)
-    } else if (scrollYProgress?.current > 0.2) {
+    } else if (scrollYProgress?.current > 0.1) {
       console.log("small")
       setHeader(true)
     }
